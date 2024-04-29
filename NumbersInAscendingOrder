@@ -1,0 +1,27 @@
+#include
+#include
+using namespace std;
+float swap(float &a, float &b)
+{
+float i;
+i=a;
+a=b;
+b=i;
+}
+int main()
+{
+float x, y, z;
+cout<<"Podaj a: "; cin>>x;
+cout<<"Podaj b: "; cin>>y;
+cout<<"Podaj c: "; cin>>z;
+if(x>y)
+swap(x,y);
+if(x>z)
+zamiana(x,z);
+if(y>z)
+swap(y,z);
+cout<<x<<" "<<y<<" "<<z;
+cin.ignore();
+getchar();
+return 0;
+}
